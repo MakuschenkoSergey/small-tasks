@@ -1,0 +1,16 @@
+body{
+position: absolute;
+top: 30%;
+left: 30%;
+}
+#display {
+margin: 10px;
+text-align: center;
+}
+.btn-wrap{
+ text-align: center;
+width: 150px;
+}
+button{
+margin: 5px;
+}
