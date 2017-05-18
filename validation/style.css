@@ -2,3 +2,19 @@
 	margin: 0 auto;
 	padding: 0;
 }
+
+.container {
+	display: block;
+	width: 300px;
+	height: auto;
+}
+
+input {
+	margin: 10px 0;
+}
+
+.log-msg,
+.pass-msg {
+	border: 1px solid lightblue;
+	height: 30px;
+}
