@@ -1,7 +1,7 @@
 "use strict"
 
 var input = document.getElementById("login"),
-	re = /\w+/;
+	re = /^[a-z]{0,10}$/;
 	pass = //;
 
 input.oninput = function() {
