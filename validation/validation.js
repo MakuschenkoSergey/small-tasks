@@ -1,8 +1,9 @@
 "use strict"
 
 var input = document.getElementById("login"),
-	re = /^[a-z]{0,10}$/;
-	pass = //;
+	input2 = document.getElementById("password"),
+	re = /^[a-z]{0,10}$/,
+	pass = /[1-9]/;
 
 input.oninput = function() {
 	
@@ -12,6 +13,17 @@ input.oninput = function() {
 	} else {
 		document.getElementById('log-msg').innerHTML = "bad";
 		document.getElementById('log-msg').style = "border: 1px solid red";
+	}
+}
+
+input2.oninput = function() {
+	
+	if (pass.test(input2.value)) {
+		document.getElementById('pass-msg').innerHTML = "Good";
+		document.getElementById('pass-msg').style = "border: 1px solid lightgreen";		
+	} else {
+		document.getElementById('pass-msg').innerHTML = "bad";
+		document.getElementById('pass-msg').style = "border: 1px solid red";
 	}
 }
 	
